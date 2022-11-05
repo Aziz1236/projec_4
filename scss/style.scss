@@ -1,0 +1,626 @@
+@import "_nullstyle";
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Regular'), local('Inter-Regular'),
+        url('../fonts/Inter-Regular/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular/Inter-Regular.woff') format('woff'),
+        url('../fonts/Inter-Regular/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Semi Bold'), local('Inter-Semi-Bold'),
+        url('../fonts/Inter-SemiBold/Inter-SemiBold.woff2') format('woff2'),
+        url('../fonts/Inter-SemiBold/Inter-SemiBold.woff') format('woff'),
+        url('../fonts/Inter-SemiBold/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Bold'), local('Inter-Bold'),
+        url('../fonts/Inter-Bold/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter-Bold/Inter-Bold.woff') format('woff'),
+        url('../fonts/Inter-Bold/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('../fonts/Roboto-Bold/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+span{
+    display: inline-block;
+}
+.wrapper{
+    .wrapper__container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .hand-phone{
+            .hand-phone__container{
+                position: relative;
+                .phone{
+                    .phone__container1{
+                        border: 1.11111111111vh solid #000;
+                        border-radius: 4.44444444444vh;
+                        background-color: #322C52;
+                        overflow: hidden;
+                        position: relative;
+                        z-index: 2;
+                        .phone__container2{
+                            hr{
+                                border-radius: 11.1111111111vh;
+                                position: absolute;
+                                width: 35.7333333333%;
+                                height: 0.61576354679%;
+                                background: #fff;
+                                left: 32%;
+                                bottom: 0.98522167487%;
+                                z-index: 3;
+                            }
+                            ::-webkit-scrollbar {
+                                display: none;
+                            }
+                            .header{
+                                .header__container{
+                                    position: absolute;
+                                    z-index: 3;
+                                    width: 100%;
+                                    height: 5vh;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-evenly;
+                                    span:nth-child(1){
+                                        font-size: 1.66666666667vh;
+                                        width: 17.8666666667%;
+                                        font-family: 'Roboto';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 18px;
+                                        letter-spacing: -0.3px;
+                                        color: #FFFFFF;
+                                    }
+                                    span:nth-child(2){
+                                        padding: 0 0.33333333333vh;
+                                        border-radius: 1.77777777778vh;
+                                        width: 31.2%;
+                                        height: 71.1111111111%;
+                                        background: #1B1B1B;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        hr:nth-child(1){
+                                            border-radius: 1.44444444444vh;
+                                            width: 58.9743589744%;
+                                            height: 81.25%;
+                                            background: #000000;
+                                            position: static;
+                                        }
+                                        hr:nth-child(2){
+                                            border-radius: 1.44444444444vh;
+                                            width: 22.2222222222%;
+                                            height: 81.25%;
+                                            background: #000000;
+                                            position: static;
+                                        }
+                                    }
+                                    span:nth-child(3){
+                                        width: 17.8666666667%;
+                                        height: 26.6666666667%;
+                                        display: flex;
+                                    }
+                                }
+                            }
+                            .main{
+                                .main__container{
+                                    .section:nth-child(1){
+                                        .section__container{
+                                            padding-top: 5vh;
+                                            width: 41.6666666667vh;
+                                            height: 90.222222222vh;
+                                            background-image: url(../img/s1_bd.svg);
+                                            background-repeat: no-repeat;
+                                            background-position: 100% 50%;
+                                            background-size: 27.7777777778vh;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            position: relative;
+                                            .nav{
+                                                .nav__container{
+                                                    width: 41.6666666667vh;
+                                                    height: 8.88888888889vh;
+                                                    margin-top: 3vh;
+                                                    display: flex;
+                                                    justify-content: space-evenly;
+                                                    .nav__box{
+                                                        width: 16.15%;
+                                                        width: 16%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: space-between;
+                                                        align-items: center;
+                                                        .nav__element{
+                                                            height: 6.77777777778vh;
+                                                            border-radius: 1.11111111111vh;
+                                                            overflow: hidden;
+                                                            display: flex;
+                                                        }
+                                                        span{
+                                                            font-family: 'Inter';
+                                                            font-style: normal;
+                                                            font-weight: 600;
+                                                            font-size: 1.11111111111vh;
+                                                            line-height: 130%;
+                                                            color: #FFFFFF;
+                                                            text-shadow: 0px 0px 20px #000000;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .article{
+                                                .article__container{
+                                                    margin-bottom: 1.66666666667vh;
+                                                    width: 39.4444444444vh;
+                                                    height: 10.4444444444vh;
+                                                    border-radius: 3.33333333333vh;
+                                                    background: rgba(13, 13, 13, 0.5);
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: space-around;
+                                                    .article__element{
+                                                        height: 6.77777777778vh;
+                                                        display: flex;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .section:nth-child(2){
+                                        .section__container1{
+                                            padding-top: 5vh;
+                                            width: 41.6666666667vh;
+                                            height: 90.222222222vh;
+                                            border-radius: 3vh;
+                                            -webkit-transform: translateZ(0);
+                                            -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+                                            overflow: hidden;
+                                            backdrop-filter: blur(4.44444444444vh);
+                                            position: absolute;
+                                            z-index: 2;
+                                            transition-duration: 500ms;
+                                            top: 0;
+                                            .section__container2{
+                                                padding-top: 1.04166666667vw;
+                                                width: 100%;
+                                                height: 100%;
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                overflow-y: scroll;
+                                                .nav{
+                                                    .nav__container{
+                                                        width: 36.6666666667vh;
+                                                        height: 5.55555555556vh;
+                                                        border-radius: 2.33333333333vh;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        background: rgba(13, 13, 13, 0.5);
+                                                        .nav__element{  
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            margin: 0 6.06060606061%;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: center;
+                                                            justify-content: right;
+                                                            ::-webkit-input-placeholder {
+                                                                color: white;
+                                                            }
+                                                            :-moz-placeholder {
+                                                                color: white;
+                                                            }
+                                                            ::-moz-placeholder {
+                                                                color: white;
+                                                            }
+                                                            :-ms-input-placeholder {
+                                                                color: white;
+                                                            }
+                                                            span{
+                                                                width: 1.55555555556vh;
+                                                                height: 1.55555555556vh;
+                                                                display: flex;
+                                                            }
+                                                            input{
+                                                                font-size: 1.77777777778vh;
+                                                                margin-left: 3.44827586207%;
+                                                                width: 55.1724137931%;
+                                                                height: 100%;
+                                                                font-family: 'Inter';
+                                                                font-style: normal;
+                                                                font-weight: 400;
+                                                                line-height: 130%;
+                                                                color: #FFFFFF;
+                                                                background: rgba(13, 13, 13, 0);
+                                                                transition-duration: 0.3s;
+                                                                cursor: pointer;
+                                                            }
+                                                            input:focus{
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .content{
+                                                    .content__container{
+                                                        margin-top: 3.66666666667vh;
+                                                        width: 36.6666666667vh;
+                                                        .content__columns{
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            justify-content: space-between;
+                                                            .content__column{
+                                                                .content__element{
+                                                                    margin-bottom: 1.55555555556vh;
+                                                                    width: 17.2222222222vh;
+                                                                    height: 19.4444444444vh;
+                                                                    display: flex;
+                                                                    flex-direction: column;
+                                                                    justify-content: space-between;
+                                                                    .article{
+                                                                        .article__container{
+                                                                            width: 17.2222222222vh;
+                                                                            height: 17.2222222222vh;
+                                                                            border-radius: 2.33333333333vh;
+                                                                            padding: 7.09677419355%;
+                                                                            gap: 6.76691729323%;
+                                                                            background: rgba(13, 13, 13, 0.5);
+                                                                            display: flex;
+                                                                            flex-wrap: wrap;
+                                                                            .article__box{
+                                                                                border: 1px solid #000;
+                                                                                border-radius: 1.11111111111vh;
+                                                                                width: 45.8646616541%;
+                                                                                height: 45.8646616541%;
+                                                                                display: flex;
+                                                                            }
+                                                                            .article__box:nth-child(4){
+                                                                                gap: 8.19672131148%;
+                                                                                border: none;
+                                                                                display: flex;
+                                                                                flex-wrap: wrap;
+                                                                                .article__element{
+                                                                                    border: 1px solid #000;
+                                                                                    border-radius: 0.50888888888vh;
+                                                                                    width: 45.8524590164%;
+                                                                                    height: 45.8524590164%;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    span{
+                                                                        font-size: 1.11111111111vh; 
+                                                                        font-family: 'Inter';
+                                                                        font-style: normal;
+                                                                        font-weight: 600;
+                                                                        line-height: 130%;
+                                                                        text-align: center;
+                                                                        color: #FFFFFF;
+                                                                        text-shadow: 0px 0px 20px #000000;
+                                                                    }
+                                                                }
+                                                            }
+                                                            .content__column:nth-child(3){
+                                                                display: none;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #hand1{
+                    position: absolute;
+                    z-index: 3;
+                    left: -19.3936708861%;
+                    bottom: 15.0240384615%;
+                    width: 14vh;
+                }
+                #hand2{ 
+                    position: absolute;
+                    right: -83.0379746835%;
+                    bottom: -4.08653846154%;
+                    width: 69.1111111111vh;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 0px) and (max-width: 759px){
+    .wrapper{
+        .wrapper__container{
+            .hand-phone{
+                .hand-phone__container{
+                    .phone{
+                        .phone__container1{
+                            border: none;
+                            border-radius: 0;
+                            .phone__container2{
+                                hr{
+                                    display: none;
+                                }
+                                .header{
+                                    .header__container{
+                                        display: none;
+                                    }
+                                }
+                                .main{
+                                    .main__container{
+                                        .section:nth-child(1){
+                                            .section__container{
+                                                padding-top: 0;
+                                                width: 100vw;
+                                                height: 100vh;
+                                                background-size: 66.6666666667vw;
+                                                background-size: 30.7881773399vh;
+                                                .nav{
+                                                    .nav__container{
+                                                        margin-top: 7.2vw;
+                                                        width: 100vw;
+                                                        height: 21.3333333333vw;
+                                                        .nav__box{
+                                                            .nav__element{
+                                                                border-radius: 2.6vw;
+                                                                height: 16.2666666667vw;
+                                                            }
+                                                            span{
+                                                            font-size: 2.66666666667vw;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .article{
+                                                    .article__container{
+                                                        border-radius: 8vw;
+                                                        margin-bottom: 4vw;
+                                                        width: 94.67vw;
+                                                        height: 25.069vw;
+                                                        padding: 0;
+                                                        .article__element{
+                                                            height: 16.2666666667vw;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .section:nth-child(2){
+                                            .section__container1{
+                                                backdrop-filter: blur(10.6666666667vw);
+                                                padding-top: 0;
+                                                border-radius: 0;
+                                                width: 100vw;
+                                                height: 100vh;
+                                                .section__container2{
+                                                    padding-top: 4vw;
+                                                    .nav{
+                                                        .nav__container{
+                                                            width: 87.7333333333vw;
+                                                            height: 13.3333333333vw;
+                                                            border-radius: 5.6vw;
+                                                            .nav__element{
+                                                                span{
+                                                                    height: 3.73333333333vw;
+                                                                }
+                                                                input{
+                                                                    width: 42.6666666667vw;
+                                                                    font-size: 4.26666666667vw;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .content{
+                                                        .content__container{
+                                                            margin-top: 8.8vw;
+                                                            width: 87.7333333333vw;
+                                                            .content__columns{
+                                                                .content__column{
+                                                                    .content__element{
+                                                                        margin-bottom: 3.73333333333vw;
+                                                                        width: 41.3333333333vw;
+                                                                        height: 46.6666666667vw;
+                                                                        .article{
+                                                                            .article__container{
+                                                                                width: 41.3333333333vw;
+                                                                                height: 41.3333333333vw;
+                                                                                border-radius: 5.6vw;
+                                                                                .article__box{
+                                                                                    border-radius: 2.66666666667vw;
+                                                                                }
+                                                                                .article__box:nth-child(4){
+                                                                                    .article__element{
+                                                                                        border-radius: 1.22133333333vw;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                        span{
+                                                                            font-size: 2.66666666667vw;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #hand1{
+                        display: none;
+                    }
+                    #hand2{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 760px) and (max-width: 1024px){
+    .wrapper{
+        .wrapper__container{
+            .hand-phone{
+                .hand-phone__container{
+                    .phone{
+                        .phone__container1{
+                            border: none;
+                            border-radius: 0;
+                            .phone__container2{
+                                hr{
+                                    display: none;
+                                }
+                                .header{
+                                    .header__container{
+                                        display: none;
+                                    }
+                                }
+                                .main{
+                                    .main__container{
+                                        .section:nth-child(1){
+                                            .section__container{
+                                                padding-top: 0;
+                                                width: 100vw;
+                                                height: 100vh;
+                                                background-size: 66.6666666667vw;
+                                                background-size: 30.7881773399vh;
+                                                .nav{
+                                                    .nav__container{
+                                                        margin-top: 7.2vw;
+                                                        width: 100vw;
+                                                        height: 21.3333333333vw;
+                                                        .nav__box{
+                                                            .nav__element{
+                                                                border-radius: 2.6vw;
+                                                                height: 16.2666666667vw;
+                                                            }
+                                                            span{
+                                                            font-size: 2.66666666667vw;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .article{
+                                                    .article__container{
+                                                        border-radius: 8vw;
+                                                        margin-bottom: 4vw;
+                                                        width: 94.67vw;
+                                                        height: 25.069vw;
+                                                        padding: 0;
+                                                        .article__element{
+                                                            height: 16.2666666667vw;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .section:nth-child(2){
+                                            .section__container1{
+                                                backdrop-filter: blur(10.6666666667vw);
+                                                padding-top: 0;
+                                                border-radius: 0;
+                                                width: 100vw;
+                                                height: 100vh;
+                                                .section__container2{
+                                                    padding-top: 4vw;
+                                                    .nav{
+                                                        .nav__container{
+                                                            width: 87.7333333333vw;
+                                                            height: 13.3333333333vw;
+                                                            border-radius: 5.6vw;
+                                                            .nav__element{
+                                                                span{
+                                                                    height: 3.73333333333vw;
+                                                                }
+                                                                input{
+                                                                    width: 42.6666666667vw;
+                                                                    font-size: 4.26666666667vw;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .content{
+                                                        .content__container{
+                                                            margin-top: 8.8vw;
+                                                            width: 87.7333333333vw;
+                                                            .content__columns{
+                                                                .content__column{
+                                                                    .content__element{
+                                                                        margin-bottom: 2.48888888889vw;
+                                                                        width: 27.5555555556vw;
+                                                                        height: 31.1111111111vw;
+                                                                        .article{
+                                                                            .article__container{
+                                                                                width: 27.5555555556vw;
+                                                                                height: 27.5555555556vw;
+                                                                                border-radius: 3.73333333333vw;
+                                                                                .article__box{
+                                                                                    border-radius: 1.77777777778vw;
+                                                                                }
+                                                                                .article__box:nth-child(4){
+                                                                                    .article__element{
+                                                                                        border-radius: 0.81422222222vw;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                        span{
+                                                                            font-size: 1.77777777778vw;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                .content__column:nth-child(3){
+                                                                    display: block;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #hand1{
+                        display: none;
+                    }
+                    #hand2{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

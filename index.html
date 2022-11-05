@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalabe=0">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__container">
+            <div class="hand-phone">
+                <div class="hand-phone__container">
+                    <img id="hand1" src="img/hand1.png" alt="">
+                    <div class="phone">
+                        <div class="phone__container1">
+                            <div class="phone__container2">
+                                <hr>
+                                <header class="header">
+                                    <div class="header__container">
+                                        <span>9:14</span>
+                                        <span>
+                                            <hr>
+                                            <hr>
+                                        </span>
+                                        <span>
+                                            <img src="img/Group 51.svg" alt="">
+                                        </span>
+                                    </div>
+                                </header>
+                                <main class="main">
+                                    <div class="main__container">
+                                        <section class="section">
+                                            <div @touchstart="onTouchStart_sc1" @touchmove="onTouchMove_sc1" @wheel="onWheel_sc1" class="section__container">
+                                                <nav class="nav">
+                                                    <div class="nav__container">
+                                                        <div class="nav__box">
+                                                            <a href="#" class="nav__element">
+                                                                <img src="img/instagram.svg" alt="">
+                                                            </a>
+                                                            <span>Instagram</span>
+                                                        </div>
+                                                        <div class="nav__box">
+                                                            <a href="#" class="nav__element">
+                                                                <img src="img/facebook.svg" alt="">
+                                                            </a>
+                                                            <span>Facebook</span>
+                                                        </div>
+                                                        <div class="nav__box">
+                                                            <a href="#" class="nav__element">
+                                                                <img src="img/telegram.svg" alt="">
+                                                            </a>
+                                                            <span>Telegram</span>
+                                                        </div>
+                                                        <div class="nav__box">
+                                                            <a href="#" class="nav__element">
+                                                                <img src="img/mail.svg" alt="">
+                                                            </a>
+                                                            <span>Mail</span>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                                <article class="article">
+                                                    <div class="article__container">
+                                                        <a href="#" class="article__element">
+                                                            <img src="img/Phone-Icon.svg" alt="">
+                                                        </a>
+                                                        <a href="#" class="article__element">
+                                                            <img src="img/safari.svg" alt="">
+                                                        </a>
+                                                        <a href="#" class="article__element">
+                                                            <img src="img/ios-message.svg" alt="">
+                                                        </a>
+                                                        <a href="#" class="article__element">
+                                                            <img src="img/apple-music.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </section>
+                                        <section class="section">
+                                            <div v-bind:style="{left:elHidden}" class="section__container1">
+                                                <div @touchstart="onTouchStart_scc2" @touchmove="onTouchMove_scc2" @wheel="onWheel_scc2" @scroll="onScroll_scc2" class="section__container2">
+                                                    <nav class="nav">
+                                                        <div class="nav__container">
+                                                                <div class="nav__element">
+                                                                    <span>
+                                                                        <img src="img/search.svg" alt="">
+                                                                    </span>
+                                                                <input placeholder="Услуги" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </nav>
+                                                    <div class="content">
+                                                        <div class="content__container">
+                                                            <div class="content__columns">
+                                                                <div class="content__column">
+                                                                    <div v-for="item in column1" class="content__element">
+                                                                        <article class="article">
+                                                                            <div class="article__container">
+                                                                                <a href="#" class="article__box">
+                                                                                    <img :src="item.box1" alt="">
+                                                                                </a>
+                                                                                <a href="#" class="article__box">
+                                                                                    <img :src="item.box2" alt="">
+                                                                                </a>
+                                                                                <a href="#" class="article__box">
+                                                                                    <img :src="item.box3" alt="">
+                                                                                </a>
+                                                                                <div class="article__box">
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </article>
+                                                                        <span>{{item.title}}</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content__column">
+                                                                    <div v-for="item in column2" class="content__element">
+                                                                        <article class="article">
+                                                                            <div class="article__container">
+                                                                                <a href="#" class="article__box">
+                                                                                    <img :src="item.box1" alt="">
+                                                                                </a>
+                                                                                <a href="#" class="article__box">
+                                                                                    <img :src="item.box2" alt="">
+                                                                                </a>
+                                                                                <a href="#" class="article__box">
+                                                                                    <img :src="item.box3" alt="">
+                                                                                </a>
+                                                                                <div class="article__box">
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </article>
+                                                                        <span>{{item.title}}</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content__column">
+                                                                    <div v-for="item in column3" class="content__element">
+                                                                        <article class="article">
+                                                                            <div class="article__container">
+                                                                                <a href="#" class="article__box">
+                                                                                    <img :src="item.box1" alt="">
+                                                                                </a>
+                                                                                <a href="#" class="article__box">
+                                                                                    <img :src="item.box2" alt="">
+                                                                                </a>
+                                                                                <a href="#" class="article__box">
+                                                                                    <img :src="item.box3" alt="">
+                                                                                </a>
+                                                                                <div class="article__box">
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                    <a href="#" class="article__element">
+                                                                                        <img :src="item.el1" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </article>
+                                                                        <span>{{item.title}}</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                    <img id="hand2" src="img/hand2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,589 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -khtml-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Semi Bold"), local("Inter-Semi-Bold"), url("../fonts/Inter-SemiBold/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Bold"), local("Inter-Bold"), url("../fonts/Inter-Bold/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/Roboto-Bold/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+span {
+  display: inline-block;
+}
+
+.wrapper .wrapper__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container {
+  position: relative;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 {
+  border: 1.1111111111vh solid #000;
+  border-radius: 4.4444444444vh;
+  background-color: #322C52;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 hr {
+  border-radius: 11.1111111111vh;
+  position: absolute;
+  width: 35.7333333333%;
+  height: 0.6157635468%;
+  background: #fff;
+  left: 32%;
+  bottom: 0.9852216749%;
+  z-index: 3;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 ::-webkit-scrollbar {
+  display: none;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .header .header__container {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .header .header__container span:nth-child(1) {
+  font-size: 1.6666666667vh;
+  width: 17.8666666667%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .header .header__container span:nth-child(2) {
+  padding: 0 0.3333333333vh;
+  border-radius: 1.7777777778vh;
+  width: 31.2%;
+  height: 71.1111111111%;
+  background: #1B1B1B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .header .header__container span:nth-child(2) hr:nth-child(1) {
+  border-radius: 1.4444444444vh;
+  width: 58.9743589744%;
+  height: 81.25%;
+  background: #000000;
+  position: static;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .header .header__container span:nth-child(2) hr:nth-child(2) {
+  border-radius: 1.4444444444vh;
+  width: 22.2222222222%;
+  height: 81.25%;
+  background: #000000;
+  position: static;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .header .header__container span:nth-child(3) {
+  width: 17.8666666667%;
+  height: 26.6666666667%;
+  display: flex;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container {
+  padding-top: 5vh;
+  width: 41.6666666667vh;
+  height: 90.222222222vh;
+  background-image: url(../img/s1_bd.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 27.7777777778vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .nav .nav__container {
+  width: 41.6666666667vh;
+  height: 8.8888888889vh;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .nav .nav__container .nav__box {
+  width: 16.15%;
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .nav .nav__container .nav__box .nav__element {
+  height: 6.7777777778vh;
+  border-radius: 1.1111111111vh;
+  overflow: hidden;
+  display: flex;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .nav .nav__container .nav__box span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1111111111vh;
+  line-height: 130%;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 20px #000000;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .article .article__container {
+  margin-bottom: 1.6666666667vh;
+  width: 39.4444444444vh;
+  height: 10.4444444444vh;
+  border-radius: 3.3333333333vh;
+  background: rgba(13, 13, 13, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .article .article__container .article__element {
+  height: 6.7777777778vh;
+  display: flex;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 {
+  padding-top: 5vh;
+  width: 41.6666666667vh;
+  height: 90.222222222vh;
+  border-radius: 3vh;
+  -webkit-transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(4.4444444444vh);
+          backdrop-filter: blur(4.4444444444vh);
+  position: absolute;
+  z-index: 2;
+  transition-duration: 500ms;
+  top: 0;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 {
+  padding-top: 1.0416666667vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container {
+  width: 36.6666666667vh;
+  height: 5.5555555556vh;
+  border-radius: 2.3333333333vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13, 13, 13, 0.5);
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element {
+  width: 100%;
+  height: 100%;
+  margin: 0 6.0606060606%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: right;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element ::-webkit-input-placeholder {
+  color: white;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element :-moz-placeholder {
+  color: white;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element ::-moz-placeholder {
+  color: white;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element :-ms-input-placeholder {
+  color: white;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element span {
+  width: 1.5555555556vh;
+  height: 1.5555555556vh;
+  display: flex;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element input {
+  font-size: 1.7777777778vh;
+  margin-left: 3.4482758621%;
+  width: 55.1724137931%;
+  height: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #FFFFFF;
+  background: rgba(13, 13, 13, 0);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element input:focus {
+  width: 100%;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container {
+  margin-top: 3.6666666667vh;
+  width: 36.6666666667vh;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element {
+  margin-bottom: 1.5555555556vh;
+  width: 17.2222222222vh;
+  height: 19.4444444444vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element .article .article__container {
+  width: 17.2222222222vh;
+  height: 17.2222222222vh;
+  border-radius: 2.3333333333vh;
+  padding: 7.0967741936%;
+  gap: 6.7669172932%;
+  background: rgba(13, 13, 13, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element .article .article__container .article__box {
+  border: 1px solid #000;
+  border-radius: 1.1111111111vh;
+  width: 45.8646616541%;
+  height: 45.8646616541%;
+  display: flex;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element .article .article__container .article__box:nth-child(4) {
+  gap: 8.1967213115%;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element .article .article__container .article__box:nth-child(4) .article__element {
+  border: 1px solid #000;
+  border-radius: 0.5088888889vh;
+  width: 45.8524590164%;
+  height: 45.8524590164%;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element span {
+  font-size: 1.1111111111vh;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 20px #000000;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column:nth-child(3) {
+  display: none;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container #hand1 {
+  position: absolute;
+  z-index: 3;
+  left: -19.3936708861%;
+  bottom: 15.0240384615%;
+  width: 14vh;
+}
+.wrapper .wrapper__container .hand-phone .hand-phone__container #hand2 {
+  position: absolute;
+  right: -83.0379746835%;
+  bottom: -4.0865384615%;
+  width: 69.1111111111vh;
+}
+
+@media (min-width: 0px) and (max-width: 759px) {
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 {
+    border: none;
+    border-radius: 0;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 hr {
+    display: none;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .header .header__container {
+    display: none;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container {
+    padding-top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: 66.6666666667vw;
+    background-size: 30.7881773399vh;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .nav .nav__container {
+    margin-top: 7.2vw;
+    width: 100vw;
+    height: 21.3333333333vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .nav .nav__container .nav__box .nav__element {
+    border-radius: 2.6vw;
+    height: 16.2666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .nav .nav__container .nav__box span {
+    font-size: 2.6666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .article .article__container {
+    border-radius: 8vw;
+    margin-bottom: 4vw;
+    width: 94.67vw;
+    height: 25.069vw;
+    padding: 0;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .article .article__container .article__element {
+    height: 16.2666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 {
+    -webkit-backdrop-filter: blur(10.6666666667vw);
+            backdrop-filter: blur(10.6666666667vw);
+    padding-top: 0;
+    border-radius: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 {
+    padding-top: 4vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container {
+    width: 87.7333333333vw;
+    height: 13.3333333333vw;
+    border-radius: 5.6vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element span {
+    height: 3.7333333333vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element input {
+    width: 42.6666666667vw;
+    font-size: 4.2666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container {
+    margin-top: 8.8vw;
+    width: 87.7333333333vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element {
+    margin-bottom: 3.7333333333vw;
+    width: 41.3333333333vw;
+    height: 46.6666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element .article .article__container {
+    width: 41.3333333333vw;
+    height: 41.3333333333vw;
+    border-radius: 5.6vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element .article .article__container .article__box {
+    border-radius: 2.6666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element .article .article__container .article__box:nth-child(4) .article__element {
+    border-radius: 1.2213333333vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element span {
+    font-size: 2.6666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container #hand1 {
+    display: none;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container #hand2 {
+    display: none;
+  }
+}
+@media (min-width: 760px) and (max-width: 1024px) {
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 {
+    border: none;
+    border-radius: 0;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 hr {
+    display: none;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .header .header__container {
+    display: none;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container {
+    padding-top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: 66.6666666667vw;
+    background-size: 30.7881773399vh;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .nav .nav__container {
+    margin-top: 7.2vw;
+    width: 100vw;
+    height: 21.3333333333vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .nav .nav__container .nav__box .nav__element {
+    border-radius: 2.6vw;
+    height: 16.2666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .nav .nav__container .nav__box span {
+    font-size: 2.6666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .article .article__container {
+    border-radius: 8vw;
+    margin-bottom: 4vw;
+    width: 94.67vw;
+    height: 25.069vw;
+    padding: 0;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(1) .section__container .article .article__container .article__element {
+    height: 16.2666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 {
+    -webkit-backdrop-filter: blur(10.6666666667vw);
+            backdrop-filter: blur(10.6666666667vw);
+    padding-top: 0;
+    border-radius: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 {
+    padding-top: 4vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container {
+    width: 87.7333333333vw;
+    height: 13.3333333333vw;
+    border-radius: 5.6vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element span {
+    height: 3.7333333333vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .nav .nav__container .nav__element input {
+    width: 42.6666666667vw;
+    font-size: 4.2666666667vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container {
+    margin-top: 8.8vw;
+    width: 87.7333333333vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element {
+    margin-bottom: 2.4888888889vw;
+    width: 27.5555555556vw;
+    height: 31.1111111111vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element .article .article__container {
+    width: 27.5555555556vw;
+    height: 27.5555555556vw;
+    border-radius: 3.7333333333vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element .article .article__container .article__box {
+    border-radius: 1.7777777778vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element .article .article__container .article__box:nth-child(4) .article__element {
+    border-radius: 0.8142222222vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column .content__element span {
+    font-size: 1.7777777778vw;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container .phone .phone__container1 .phone__container2 .main .main__container .section:nth-child(2) .section__container1 .section__container2 .content .content__container .content__columns .content__column:nth-child(3) {
+    display: block;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container #hand1 {
+    display: none;
+  }
+  .wrapper .wrapper__container .hand-phone .hand-phone__container #hand2 {
+    display: none;
+  }
+}
