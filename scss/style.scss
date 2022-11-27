@@ -38,6 +38,10 @@
 span{
     display: inline-block;
 }
+#h2{
+    position: absolute;
+    left: 39vw;
+}
 .wrapper{
     .wrapper__container{
         width: 100vw;
@@ -354,6 +358,9 @@ span{
     }
 }
 @media (min-width: 0px) and (max-width: 759px){
+    #h2{
+        display: none;
+    }
     .wrapper{
         .wrapper__container{
             .hand-phone{
@@ -488,6 +495,9 @@ span{
     }
 }
 @media (min-width: 760px) and (max-width: 1024px){
+    #h2{
+        display: none;
+    }
     .wrapper{
         .wrapper__container{
             .hand-phone{
